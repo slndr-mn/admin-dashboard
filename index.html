@@ -444,7 +444,8 @@
                       <div class="col col-stats ms-3 ms-sm-0">
                         <div class="numbers">
                           <p class="card-category">Stored Medicines</p>
-                          <h4 class="card-title">45 Medicines</h4>
+                          <!-- Placeholder for Stored Medicines count -->
+                          <h4 class="card-title" id="stored-medicines-count">--</h4>
                         </div>
                       </div>
                     </div>
@@ -465,7 +466,8 @@
                       <div class="col col-stats ms-3 ms-sm-0">
                         <div class="numbers">
                           <p class="card-category">Registered Patients</p>
-                          <h4 class="card-title">221 Patients</h4>
+                          <!-- Placeholder for Registered Patients count -->
+                          <h4 class="card-title" id="registered-patients-count">--</h4>
                         </div>
                       </div>
                     </div>
@@ -486,7 +488,8 @@
                       <div class="col col-stats ms-3 ms-sm-0">
                         <div class="numbers">
                           <p class="card-category">Authorized Users</p>
-                          <h4 class="card-title">10 Users</h4>
+                          <!-- Placeholder for Authorized Users count -->
+                          <h4 class="card-title" id="authorized-users-count">--</h4>
                         </div>
                       </div>
                     </div>
@@ -512,167 +515,56 @@
               </div>
               <div class="sdm-table-container">
                 <div class="sdm-table-header">Short-dated Medicines</div>
-
                 <hr>
-                
                 <div class="sdm-header-row">
-                    <div class="sdm-column">#</div>
-                    <div class="sdm-column">Name</div>
-                    <div class="sdm-column"></div>
-                    <div class="sdm-column">Brand</div>
-                    <div class="sdm-column"></div>
-                    <div class="sdm-column">Expiration Date</div>
+                  <div class="sdm-column">#</div>
+                  <div class="sdm-column">Name</div>
+                  <div class="sdm-column">Brand</div>
+                  <div class="sdm-column">Expiration Date</div>
                 </div>
-                
-                <div class="sdm-row">
-                    <div class="sdm-column">1</div>
-                    <div class="sdm-column">Paracetamol</div>
-                    <div class="sdm-column"></div>
-                    <div class="sdm-column"></div>
-                    <div class="sdm-column"></div>
-                    <div class="sdm-column"></div>
-                </div>
-                
-                <div class="sdm-row">
-                    <div class="sdm-column">2</div>
-                    <div class="sdm-column">Ibuprofen</div>
-                    <div class="sdm-column"></div>
-                    <div class="sdm-column"></div>
-                    <div class="sdm-column"></div>
-                    <div class="sdm-column"></div>
-                </div>
-                
-                <div class="sdm-row">
-                    <div class="sdm-column">3</div>
-                    <div class="sdm-column">Amoxicillin</div>
-                    <div class="sdm-column"></div>
-                    <div class="sdm-column"></div>
-                    <div class="sdm-column"></div>
-                    <div class="sdm-column"></div>
-                </div>
-                
-                <div class="sdm-row">
-                    <div class="sdm-column">4</div>
-                    <div class="sdm-column">Azithromycin</div>
-                    <div class="sdm-column"></div>
-                    <div class="sdm-column"></div>
-                    <div class="sdm-column"></div>
-                    <div class="sdm-column"></div>
-                </div>
-                
-                <div class="sdm-row">
-                    <div class="sdm-column">5</div>
-                    <div class="sdm-column">Cetirizine</div>
-                    <div class="sdm-column"></div>
-                    <div class="sdm-column"></div>
-                    <div class="sdm-column"></div>
-                    <div class="sdm-column"></div>
-                </div>
-                
-                <div class="sdm-row">
-                    <div class="sdm-column">6</div>
-                    <div class="sdm-column">Loratadine</div>
-                    <div class="sdm-column"></div>
-                    <div class="sdm-column"></div>
-                    <div class="sdm-column"></div>
-                    <div class="sdm-column"></div>
-                </div>
-
-                <hr>
-                
+                <div id="short-dated-medicines-list"></div>
                 <div class="sdm-see-more">
-                    <a href="#">See more</a>
+                  <hr>
+                  <a href="#">See more</a>
                 </div>
+              </div>
             </div>
-            
-            </div>
+
             <div class="tables-container">
-              <div class="rue-table-container">
-                  <div class="rue-table-header">Recently Used Equipment</div>
-              
-                  <div class="rue-header-row">
-                      <div class="rue-column">#</div>
-                      <div class="rue-column">Name</div>
-                      <div class="rue-column">Date Used</div>
-                  </div>
-              
-                  <div class="rue-row">
-                      <div class="rue-column"></div>
-                      <div class="rue-column"></div>
-                      <div class="rue-column"></div>
-                  </div>
-                  <div class="rue-row">
-                    <div class="rue-column"></div>
-                    <div class="rue-column"></div>
-                    <div class="rue-column"></div>
-                </div>
-                <div class="rue-row">
-                  <div class="rue-column"></div>
-                  <div class="rue-column"></div>
-                  <div class="rue-column"></div>
-              </div>
-                  <div class="rue-row">
-                      <div class="rue-column"></div>
-                      <div class="rue-column"></div>
-                      <div class="rue-column"></div>
-                  </div>
-              
-                  <hr>
-              
-                  <div class="rue-see-more">
-                      <a href="#">See more</a>
-                  </div>
-              </div>
-          
-              <div class="rv-table-container">
-                  <div class="rv-table-header">Recently Visited</div>
-              
-                  <div class="rv-header-row">
-                      <div class="rv-column">#</div>
-                      <div class="rv-column">Name</div>
-                      <div class="rv-column">Reason for Visit</div>
-                      <div class="rv-column">Treatment Provided</div>
-                      <div class="rv-column">Date</div>
-                  </div>
-              
-                  <div class="rv-row">
-                      <div class="rv-column"></div>
-                      <div class="rv-column"></div>
-                      <div class="rv-column"></div>
-                      <div class="rv-column"></div>
-                      <div class="rv-column"></div>
-                  </div>
-                  <div class="rv-row">
-                    <div class="rv-column"></div>
-                    <div class="rv-column"></div>
-                    <div class="rv-column"></div>
-                    <div class="rv-column"></div>
-                    <div class="rv-column"></div>
-                </div>
-                <div class="rv-row">
-                  <div class="rv-column"></div>
-                  <div class="rv-column"></div>
-                  <div class="rv-column"></div>
-                  <div class="rv-column"></div>
-                  <div class="rv-column"></div>
-              </div>
-              <div class="rv-row">
-                <div class="rv-column"></div>
-                <div class="rv-column"></div>
-                <div class="rv-column"></div>
-                <div class="rv-column"></div>
-                <div class="rv-column"></div>
-            </div>
-              
-                  <hr>
-              
-                  <div class="rv-see-more">
-                      <a href="#">See more</a>
-                  </div>
-              </div>
-          </div>
+    <div class="rue-table-container">
+        <div class="rue-table-header">Recently Used Equipment</div>
+        <hr>
+        <div class="rue-header-row">
+            <div class="rue-column">#</div>
+            <div class="rue-column">Name</div>
+            <div class="rue-column">Date Used</div>
+        </div>
+        <div id="recently-used-equipment-list"></div>
+        <div class="rue-see-more">
+            <hr>
+            <a href="#">See more</a>
+        </div>
+    </div>
+
+    <div class="rv-table-container">
+        <div class="rv-table-header">Recently Visited</div>
+        <hr>
+        <div class="rv-header-row">
+            <div class="rv-column">#</div>
+            <div class="rv-column">Name</div>
+            <div class="rv-column">Reason for Visit</div>
+            <div class="rv-column">Treatment Provided</div>
+            <div class="rv-column">Date</div>
+        </div>
+        <div id="recently-visited-list"></div>
+        <div class="rv-see-more">
+            <hr>
+            <a href="#">See more</a>
           </div>
         </div>
+      </div>
+     </div>
+    </div>
         
 
 
@@ -768,6 +660,72 @@
         lineColor: "#ffa534",
         fillColor: "rgba(255, 165, 52, .14)",
       });
+
+
+
+      document.addEventListener("DOMContentLoaded", function () {
+  const data = {
+    storedMedicinesCount: 45,
+    registeredPatientsCount: 221,
+    authorizedUsersCount: 10
+  };
+
+  document.getElementById("stored-medicines-count").textContent = data.storedMedicinesCount;
+  document.getElementById("registered-patients-count").textContent = data.registeredPatientsCount;
+  document.getElementById("authorized-users-count").textContent = data.authorizedUsersCount;
+});
+
+    function renderShortDatedMedicines() {
+        const listContainer = document.getElementById('short-dated-medicines-list');
+        shortDatedMedicines.forEach(item => {
+            const row = document.createElement('div');
+            row.className = 'sdm-row';
+            row.innerHTML = `
+                <div class="sdm-column">${item.id}</div>
+                <div class="sdm-column">${item.name}</div>
+                <div class="sdm-column">${item.brand}</div>
+                <div class="sdm-column">${item.expirationDate}</div>
+            `;
+            listContainer.appendChild(row);
+        });
+    }
+    
+    function renderRecentlyUsedEquipment() {
+        const listContainer = document.getElementById('recently-used-equipment-list');
+        recentlyUsedEquipment.forEach(item => {
+            const row = document.createElement('div');
+            row.className = 'rue-row';
+            row.innerHTML = `
+                <div class="rue-column">${item.id}</div>
+                <div class="rue-column">${item.name}</div>
+                <div class="rue-column">${item.dateUsed}</div>
+            `;
+            listContainer.appendChild(row);
+        });
+    }
+
+    function renderRecentlyVisited() {
+        const listContainer = document.getElementById('recently-visited-list');
+        recentlyVisited.forEach(item => {
+            const row = document.createElement('div');
+            row.className = 'rv-row';
+            row.innerHTML = `
+                <div class="rv-column">${item.id}</div>
+                <div class="rv-column">${item.name}</div>
+                <div class="rv-column">${item.reason}</div>
+                <div class="rv-column">${item.treatment}</div>
+                <div class="rv-column">${item.date}</div>
+            `;
+            listContainer.appendChild(row);
+        });
+    }
+
+    window.onload = function() {
+        renderShortDatedMedicines();
+        renderRecentlyUsedEquipment();
+        renderRecentlyVisited();
+    };
+
     </script>
   </body>
 </html>
