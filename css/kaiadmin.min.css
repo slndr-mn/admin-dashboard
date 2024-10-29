@@ -10744,6 +10744,8 @@ body[data-background-color=dark] .jvm-zoom-btn {
    border: 1px solid #ccc;
    border-radius: 5px;
    padding: 16px;
+   position: relative;
+   padding-bottom: 30px;
 }
 .sdm-table-header {
    font-weight: bold;
@@ -10774,30 +10776,35 @@ body[data-background-color=dark] .jvm-zoom-btn {
 }
 
 .sdm-see-more {
-   text-align: right;
-   margin-top: 8px;
+   position: absolute;
+   bottom: 10px;
+   right: 10px;
    font-weight: bold;
 }
 
 hr {
+   width: 100%;
    border: none;
    border-top: 1px solid #ccc;
-   margin: 8px 0;
+   margin: 0;
 }
 
 
 .tables-container {
    display: flex;
-   gap: 20px; /* Adjust the space between the tables */
+   gap: 20px;
 }
 .rue-table-container {
    width: 310px;
+   height: 250px;
    font-family: Arial, sans-serif;
    font-size: 14px;
    background-color: white;
    border: 1px solid #ccc;
    border-radius: 5px;
    padding: 16px;
+   position: relative;
+   padding-bottom: 30px;
 }
 
 .rue-table-header {
@@ -10831,6 +10838,9 @@ hr {
 .rue-see-more {
    text-align: right;
    margin-top: 8px;
+   position: absolute;
+   bottom: 10px;
+   right: 10px;
    font-weight: bold;
 }
 
@@ -10852,12 +10862,15 @@ hr {
 
 .rv-table-container {
    width: 800px;
+   height: 250px;
    font-family: Arial, sans-serif;
    font-size: 14px;
    background-color: white;
    border: 1px solid #ccc;
    border-radius: 5px;
    padding: 16px;
+   position: relative;
+   padding-bottom: 30px;
 }
 
 .rv-table-header {
@@ -10891,6 +10904,9 @@ hr {
 .rv-see-more {
    text-align: right;
    margin-top: 8px;
+   position: absolute;
+   bottom: 10px;
+   right: 10px;
    font-weight: bold;
 }
 
