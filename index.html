@@ -675,6 +675,29 @@
   document.getElementById("authorized-users-count").textContent = data.authorizedUsersCount;
 });
 
+
+const recentlyUsedEquipment = [
+            { id: 1, name: 'Stethoscope', dateUsed: '2024-10-01' },
+            { id: 2, name: 'Thermometer', dateUsed: '2024-10-15' },
+            { id: 3, name: 'Blood Pressure Monitor', dateUsed: '2024-10-20' },
+            { id: 4, name: 'Surgical Gloves', dateUsed: '2024-10-25' }
+        ];
+
+        // Sample data for Recently Visited
+        const recentlyVisited = [
+            { id: 1, name: 'John Doe', reason: 'Routine Checkup', treatment: 'General Examination', date: '2024-10-01' },
+            { id: 2, name: 'Jane Smith', reason: 'Flu Symptoms', treatment: 'Medication Prescribed', date: '2024-10-10' },
+            { id: 3, name: 'Emily Johnson', reason: 'Follow-up Appointment', treatment: 'Check-up', date: '2024-10-15' },
+            { id: 4, name: 'Michael Brown', reason: 'Allergy Symptoms', treatment: 'Allergy Testing', date: '2024-10-20' }
+        ];
+
+        // Sample data for Short-dated Medicines
+        const shortDatedMedicines = [
+            { id: 1, name: 'Aspirin', brand: 'Acme Pharma', expirationDate: '2024-11-01' },
+            { id: 2, name: 'Ibuprofen', brand: 'HealthCo', expirationDate: '2024-11-15' },
+            { id: 3, name: 'Amoxicillin', brand: 'MediCare', expirationDate: '2024-12-01' },
+            { id: 4, name: 'Paracetamol', brand: 'Generic', expirationDate: '2024-12-10' }
+        ];
     function renderShortDatedMedicines() {
         const listContainer = document.getElementById('short-dated-medicines-list');
         shortDatedMedicines.forEach(item => {
